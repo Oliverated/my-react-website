@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal | www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Responsive Animated Product Card | CodingLab </title>
+  <style>
+    /* Google Fonts Poppins */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: linear-gradient(135deg, #0891d6 10%, #9708CC 100%);
+    }
+
+    main{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .product-card {
+      position: relative;
+      max-width: 355px;
+      width: 100%;
+      border-radius: 25px;
+      padding: 10px 30px 30px 30px;
+      background: #fffffffa;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      z-index: 3;
+      overflow: hidden;
+    }
+
+    .tool-block .tool-img {
+      width: 0.8rem;
+      border-radius: 50%;
+      background-color: #b0f5001d;
+      padding: 1%;
+
+    }
+
+    .product-card .main-images {
+      position: relative;
+      height: 210px;
+    }
+
+    .product-card .main-images img {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+      /* transform: rotate(18deg); */
+      left: 50px;
+      top: -10px;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      margin: auto;
+    }
+
+    .product-card .main-images img.active {
+      opacity: 1;
+    }
+
+    .product-card .shoe-details .shoe_name {
+      font-size: 24px;
+      font-weight: 500;
+      color: #161616;
+    }
+
+    .product-card .shoe-details p {
+      font-size: 13px;
+      /* font-weight: 400; */
+      color: #333;
+      text-align: justify;
+      margin-bottom: 5%;
+    }
+
+    .circles {
+      display: grid;
+      row-gap: 15%;
+    }
+
+    .circles span {
+      display: flex;
+      gap: 3%;
+    }
+
+    .circles b {
+      font-weight: lighter;
+      font-size: 15px;
+      width: 100%;
+    }
+
+    .color-option .circles .circle {
+      height: 18px;
+      width: 18px;
+      background: #0071C7;
+      border-radius: 50%;
+      margin: 0 4px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+    }
+
+    .color-option .circles .circle.blue.active {
+      box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px #0071C7;
+    }
+
+    .color-option .circles .circle.pink {
+      background: #FA1795;
+    }
+
+    .color-option .circles .circle.pink.active {
+      box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px #FA1795;
+    }
+
+    .color-option .circles .circle.yellow {
+      background: #F5DA00;
+    }
+
+    .color-option .circles .circle.yellow.active {
+      box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px #F5DA00;
+    }
+
+    .product-card .button {
+      position: relative;
+      height: 50px;
+      width: 100%;
+      border-radius: 25px;
+      margin-top: 30px;
+      overflow: hidden;
+    }
+
+    .product-card .button .button-layer {
+      position: absolute;
+      height: 100%;
+      width: 300%;
+      left: -100%;
+      background-image: linear-gradient(1000deg, #092701, #0cf41b, #002d05, #09e85e);
+      transition: all 0.5s ease;
+      border-radius: 25PX;
+    }
+
+    .product-card .button:hover .button-layer {
+      left: 0;
+    }
+
+    .product-card .button button {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background: none;
+      outline: none;
+      border: none;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+  </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <main>
+    
+  <div class="product-card">
+    <div class="tool-block">
+      <img class="tool-img" src="html.png">
+      <img class="tool-img" src="css.png">
+      <img class="tool-img" src="js.png">
+    </div>
+    <div class="main-images">
+      <img id="blue" class="blue active" src="atom.png" alt="blue">
+      <img id="pink" class="pink" src="css.png" alt="blue">
+      <img id="yellow" class="yellow" src="js.png" alt="blue">
+    </div>
+    <div class="shoe-details">
+      <span class="shoe_name">API BASED WEB-APP </span>
+      <p>Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit. Eum, ea, ducimus!</p>
+    </div>
+
+      <div class="color-option">
+        <div class="circles">
+          <span>
+            <span class="circle blue active" id="blue"> </span> <b> Joke api</b>
+          </span>
+          <span>
+            <span class="circle pink " id="pink"> </span> <b>weather app </b>
+          </span>
+          <span>
+            <span class="circle yellow " id="yellow"> </span><b>curency converter</b>
+          </span>
+        </div>
+      </div>
+
+    <div class="button">
+      <div class="button-layer"></div>
+      <button>Explore</button>
+    </div>
+  </div>
+
+
+  <div class="product-card">
+    <div class="tool-block">
+      <img class="tool-img" src="html.png">
+      <img class="tool-img" src="css.png">
+      <img class="tool-img" src="js.png">
+    </div>
+    <div class="main-images">
+      <img id="blue" class="blue active" src="atom.png" alt="blue">
+      <img id="pink" class="pink" src="css.png" alt="blue">
+      <img id="yellow" class="yellow" src="js.png" alt="blue">
+    </div>
+    <div class="shoe-details">
+      <span class="shoe_name">API BASED WEB-APP </span>
+      <p>Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit. Eum, ea, ducimus!</p>
+    </div>
+    <div class="color-price">
+      <div class="color-option">
+        <div class="circles">
+          <span>
+            <span class="circle blue active" id="blue"> </span> <b> Joke api</b>
+          </span>
+          <span>
+            <span class="circle pink " id="pink"> </span> <b>weather app </b>
+          </span>
+          <span>
+            <span class="circle yellow " id="yellow"> </span><b>curency converter</b>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <div class="button-layer"></div>
+      <button>Explore</button>
+    </div>
+  </div>
+
+  
+  <div class="product-card">
+    <div class="tool-block">
+      <img class="tool-img" src="html.png">
+      <img class="tool-img" src="css.png">
+      <img class="tool-img" src="js.png">
+    </div>
+    <div class="main-images">
+      <img id="blue" class="blue active" src="atom.png" alt="blue">
+      <img id="pink" class="pink" src="css.png" alt="blue">
+      <img id="yellow" class="yellow" src="js.png" alt="blue">
+    </div>
+    <div class="shoe-details">
+      <span class="shoe_name">API BASED WEB-APP </span>
+      <p>Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit. Eum, ea, ducimus!</p>
+    </div>
+    <div class="color-price">
+      <div class="color-option">
+        <div class="circles">
+          <span>
+            <span class="circle blue active" id="blue"> </span> <b> Joke api</b>
+          </span>
+          <span>
+            <span class="circle pink " id="pink"> </span> <b>weather app </b>
+          </span>
+          <span>
+            <span class="circle yellow " id="yellow"> </span><b>curency converter</b>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <div class="button-layer"></div>
+      <button>Explore</button>
+    </div>
+  </div>
+
+
+  
+  <div class="product-card">
+    <div class="tool-block">
+      <img class="tool-img" src="html.png">
+      <img class="tool-img" src="css.png">
+      <img class="tool-img" src="js.png">
+    </div>
+    <div class="main-images">
+      <img id="blue" class="blue active" src="atom.png" alt="blue">
+      <img id="pink" class="pink" src="css.png" alt="blue">
+      <img id="yellow" class="yellow" src="js.png" alt="blue">
+    </div>
+    <div class="shoe-details">
+      <span class="shoe_name">API BASED WEB-APP </span>
+      <p>Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit. Eum, ea, ducimus!</p>
+    </div>
+    <div class="color-price">
+      <div class="color-option">
+        <div class="circles">
+          <span>
+            <span class="circle blue active" id="blue"> </span> <b> Joke api</b>
+          </span>
+          <span>
+            <span class="circle pink " id="pink"> </span> <b>weather app </b>
+          </span>
+          <span>
+            <span class="circle yellow " id="yellow"> </span><b>curency converter</b>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <div class="button-layer"></div>
+      <button>Explore</button>
+    </div>
+  </div>
+
+
+  </main>
+
+
+
+
+
+  <script>
+
+    let circles = document.querySelectorAll(".circles");
+
+    circles.forEach((circle) =>{
+          circle.addEventListener("click", (e) => {
+      var target = e.target;
+      if (target.classList.contains("circle")) {
+        circle.querySelector(".active").classList.remove("active");
+        target.classList.add("active");
+        document.querySelector(".main-images .active").classList.remove("active");
+        document.querySelector(`.main-images .${target.id}`).classList.add("active");
+      }
+    });
+    })
+
+
+
+  </script>
+</body>
+
+</html>
