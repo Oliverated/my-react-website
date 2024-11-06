@@ -5,7 +5,7 @@ export default function About() {
       <main className="about">
         <div className="about-block">
           <div className="about-block1">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Let me make your business standout among 1000+ others</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="about-block2">
