@@ -31,7 +31,6 @@ export default function Contact() {
 <p>
             <div><i className="fab fa-facebook"></i><span>@Victor O. Oliver</span></div>
             <div><i className="fab fa-instagram"></i><span>@Oliverated</span></div>   
-            <div><i className="fab fa-linkedin"></i><span>@Osakpolor Ovbiebo</span></div>   
             <div><i className="fab fa-x"></i><span>@LODoliver1</span></div>
             <div><i className="fab fa-github"></i><span>@Oliverated</span></div>
 </p>

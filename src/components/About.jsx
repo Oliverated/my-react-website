@@ -16,7 +16,7 @@ export default function About() {
         <p>
           <img
             className="about-img"
-            src="src/img-components/view-3d-couple.png"
+            src="public/3d-img.png"
             alt=""
           />
         </p>

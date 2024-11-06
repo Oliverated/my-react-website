@@ -11,6 +11,7 @@
 body {
   background-color: var(--bg);
   overflow-x: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* nav */
@@ -20,11 +21,8 @@ header{
   width: 100%;
 }
 .nav{
-
   display: flex;
   justify-content: space-between;
-  /* gap: 60%; */
-
   width: 95%;
   margin: auto;
 }
@@ -37,7 +35,6 @@ header{
 .nav-list{
   display: flex;
   gap: 1rem;
-
 }
 
 .nav-list li {
@@ -67,8 +64,6 @@ header{
   transform: translateY(0px);
 }
 
-
-
 /* home */
 #sector1 {
   /* margin-top: 3%; */
@@ -89,6 +84,7 @@ header{
   margin-top: 10%;
   margin-left: 5%;
   width: 90%;
+  align-content: center;
   /* margin-top: 5%; */
 }
 
@@ -97,6 +93,8 @@ header{
   content: " O";
   color: var(--secondary);
 }
+
+.free{color: green;}
 
 @keyframes write {
   0% {
@@ -133,28 +131,31 @@ header{
     content: "Ovbiebo O. |";
   }
   55% {
-    content: "Ovbiebo O. V|";
+    content: "Ovbiebo O. O|";
   }
   60% {
-    content: "Ovbiebo O. Vi|";
+    content: "Ovbiebo O. Ol|";
   }
   65% {
-    content: "Ovbiebo O. Vic|";
+    content: "Ovbiebo O. Oli|";
   }
   70% {
-    content: "Ovbiebo O. Vict|";
+    content: "Ovbiebo O. Oliv|";
   }
   75% {
-    content: "Ovbiebo O. Victo|";
+    content: "Ovbiebo O. Olive|";
   }
   80% {
-    content: "Ovbiebo O. Victor |";
+    content: "Ovbiebo O. Oliver|";
+  }
+  85% {
+    content: "Ovbiebo O. Oliver |";
   }
   90% {
-    content: "Ovbiebo O. Victor|";
+    content: "Ovbiebo O. Oliver|";
   }
   100% {
-    content: "Ovbiebo O. Victor";
+    content: "Ovbiebo O. Oliver";
   }
 }
 
@@ -315,9 +316,7 @@ header{
   100% {
     content: "W|";
   }
-  /* 100%{
-        content: "|";
-    } */
+
 }
 
 .home-art {
@@ -341,6 +340,8 @@ header{
   width: 8rem;
   transition: 1s;
   cursor: pointer;
+  margin-top: 3%;
+  border-radius: 5px;
 }
 
 .home-btn:hover {
@@ -439,8 +440,6 @@ flex-direction: row-reverse;
   font-size: 30px;
   gap: 5%;
   margin-top: 12%;
-  /* background-color: green; */
-  /* width: 100%; */
   content: "";
 }
 
@@ -574,15 +573,17 @@ form .first_name{
 
 form .first_name, .last_name{
   width: 15dvw;
+  height: 5vh;
 }
 
 form .email{
   width: 31.5dvw;
+  height: 5vh;
 }
 
 textarea{
   width: 31.5dvw;
-  height: 10dvh;
+  height: 11vh;
   margin-top: 1%;
 }
 
@@ -603,16 +604,20 @@ textarea{
 
 .social-block p {
   margin: auto;
+  align-content: center;
+
 }
 
 .social-block div{
   display: flex;
   justify-content: center;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   transition: 1s;
   cursor: pointer;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: light;
+  align-items: center;
+
 }
 
 .social-block div:hover{
@@ -623,21 +628,21 @@ scale: 1.1;
 .social-block div i{
   background-color: var(--secondary);
   color: var(--bg);
-  width: 2dvw;
-  height: 5dvh;
-  /* padding: 1%; */
+  width: 3vw;
+  height: 6vh;
   border-radius: 1px 0 0 10px;
-  font-size: 1.2rem;
-  
+  font-size: 40px;
+  display: block;
 }
 
 .social-block span{
-  background-color: var(--primary);
-  color: var(--bg);
+  box-shadow: 0 0 5px 0;
+  color: var(--secondary);
   border-radius: 0 30px 30px 0;
   width: 20dvw;
-  height: 5dvh;
+  height: 5.5vh;
   font-size: 2dvi;
+
 }
 
 footer{

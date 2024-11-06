@@ -13,11 +13,9 @@ export default function Home() {
             I'm a, <span className="prof"></span>
           </p>
           <article className="home-art">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-            architecto optio consequuntur ut odit perspiciatis voluptatem,
-            adipisci suscipit accusantium maiores nihil rerum molestias et
-            labore magnam provident sit repudiandae excepturi.
-          </article>
+Welcome to my website, my little personal static website, i could make one for you for absolulely <b className="free">free</b>, but it maybe not be as good as this, lolzz, just kidding!! It will obviously be far better than this.
+<p><b className="free">Free</b> Website no catch, no forzz, no extra payment, well... maybe a cup of cofee 🍵 if you want 😊</p>
+</article>
           <button className="home-btn" tel="09157301644">
             Let's Connect!
           </button>
