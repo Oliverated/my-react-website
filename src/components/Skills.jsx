@@ -18,7 +18,7 @@ export default function Skills() {
 <img src="src/skills-img/python.png" alt="" />
       </span>
       </span>
-      <i onClick={()=>SetSlider(!slider)} className="arrow_slide fa fa-angle-double-right" id={btnSlider ? "turn" : ""}  onMouseDown={()=> setBtn(!btnSlider)}></i>
+      <i onClick={()=>SetSlider(!slider)} className="arrow_slide fa fa-angle-double-right" id={slider ? "out" : ""}></i>
     </nav>
   );
 }
