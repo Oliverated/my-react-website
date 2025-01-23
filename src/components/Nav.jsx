@@ -9,7 +9,7 @@ export default function Nav() {
   
       <nav className="nav">
         <div className="nav-logo-block">
-          <img className="nav-logo" src="src/oliverated1.png" alt="" />
+          <img className="nav-logo" src="public/oliverated1.png" alt="" />
 
           <span className="harmburger" onClick={() => setMenu1(!menu1)}>
           
